@@ -49,7 +49,7 @@ define('Access', TRUE);
             && isset($_POST['komentarz']) && $_POST['komentarz'] != null
         ) {
             $sqlToUpdateMandaty = "INSERT INTO `mandaty`( `idPerson`, `kwota`, `komentarz`) 
-    VALUES (" . $_POST['idPerson'] . "," . $_POST['kwota'] . ",'" . $_POST['komentarz'] . "')";
+            VALUES (" . $_POST['idPerson'] . "," . $_POST['kwota'] . ",'" . $_POST['komentarz'] . "')";
             updataData($sqlToUpdateMandaty);
         }
         if (
@@ -58,8 +58,8 @@ define('Access', TRUE);
             && isset($_POST['pensja']) && $_POST['pensja'] != null && isset($_POST['pensja']) && $_POST['pensja'] != null
         ) {
             $sqlToUpdateMandaty = "INSERT INTO `people`( `imie`, `nazwisko`, `uczelnia`, `zawod`, `miasto`, `pensja`) 
-    VALUES ('" . $_POST['imie'] . "','" . $_POST['nazwisko'] . "','" . $_POST['uczelnia'] . "','" . $_POST['zawod'] . "',
-    '" . $_POST['miasto'] . "'," . $_POST['pensja'] . ")";
+            VALUES ('" . $_POST['imie'] . "','" . $_POST['nazwisko'] . "','" . $_POST['uczelnia'] . "','" . $_POST['zawod'] . "',
+            '" . $_POST['miasto'] . "'," . $_POST['pensja'] . ")";
             updataData($sqlToUpdateMandaty);
         }
         ?>

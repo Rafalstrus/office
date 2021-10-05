@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html>
 <?php
 include 'functions.php';
 ?>
+<!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/root.php?ver=3">
     <link rel="stylesheet" type="text/css" href="css/styles.css?ver=3">
@@ -25,10 +25,6 @@ include 'functions.php';
         header('location: login.php');
     }
 
-    ?>
-    </div>
-    </div>
-    <?php
     ?>
 </body>
 

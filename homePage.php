@@ -54,7 +54,7 @@ define('Access', TRUE);
                     if ($_POST["choose"] == "osoby") {
                         $osoby = ['id', 'imie', 'nazwisko', 'uczelnia', 'zawod', 'miasto', 'pensja', 'informacje'];
                         echo "<table style='width:100%'>
-                <tr>";
+                        <tr>";
                         foreach ($osoby as $value)
                             echo "<th>" . $value . "</th>";
                         echo "</tr>";
@@ -73,7 +73,7 @@ define('Access', TRUE);
                     } elseif ($_POST["choose"] == "mandaty") {
                         $mandaty = ['kwota', 'komentarz', 'idPerson', 'imie', 'nazwisko', 'miasto'];
                         echo "<table style='width:100%'>
-            <tr>";
+                        <tr>";
                         foreach ($mandaty as $value)
                             echo "<th>" . $value . "</th>";
                         echo "</tr>";
